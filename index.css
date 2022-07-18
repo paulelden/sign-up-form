@@ -1,0 +1,59 @@
+* {
+    border: 3px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+/* elements */
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+}
+
+/* classes */
+
+
+
+/* IDs */
+
+#leftDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+#logoDiv {
+    width: 100%;
+    height: 20%;
+    margin-top: 35%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#logoSpan {
+    color: white;    
+}
+
+#rightDiv {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#topDiv {
+    height: 33.33%;
+}
+
+#midDiv {
+    height: 33.33%;
+}
+
+#botDiv {
+    height: 33.33%;
+}
