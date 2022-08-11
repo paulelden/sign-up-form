@@ -11,23 +11,24 @@
 html,body {
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
 body {
     display: flex;
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 p {
-    font-size: 2rem;
-font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
 a {
     color: goldenrod;
     font-size: 1.5rem;
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 button {
@@ -36,26 +37,35 @@ button {
     border-radius: 10px;
     border: none;
     box-shadow: 1px 1px 3px black;
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+button:hover {
+    opacity: 80%;
 }
 
 label {
     width: 85%;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 /* classes */
 
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 33.33;
+}
+
 .userInput {
-    height: 10%;
     width: 85%;
     border-radius: 4px;
     border-width: 1px;
     border-color: lightgray;
     border-style: solid;
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     outline: 0;
-    margin-top: -3%;
 }
 
 .userInput:focus {
@@ -123,30 +133,20 @@ font-family: 'Raleway', sans-serif;
 
 #userInfoPane {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     height: 75%;
     width: 80%;
     margin: 0;
     margin-left: 5%;
 }
 
-#leftInputs {
+#topInputs,#middleInputs,#bottomInputs {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100%;
-    width: 50%;
-}
-
-#rightInputs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;    
-    width: 50%;
+    height: 33.33%;
+    width: 93%;
 }
 
 #botDiv {
@@ -156,6 +156,10 @@ font-family: 'Raleway', sans-serif;
     justify-content: top;
     height: 33.33%;
     background-color: rgb(250, 250, 250);
+}
+
+#firstName,#lastName,#email,#phoneNumber,#password,#confirmPassword {
+    margin-right: 20%;
 }
 
 #createAccount {

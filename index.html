@@ -24,25 +24,37 @@
         <div id="midDiv">
             <p id="midText">Let's do this!</p>
             <div id="userInfoPane">
-                <form id="leftInputs" action="" method="post">
-                    <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" class="userInput" id="firstName">
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" class="userInput" id="email">
+                <form id="topInputs" action="" method="post">
+                    <div class="inputContainer">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" class="userInput" id="firstName">
+                    </div>
                     
-                    <label for="password">Password</label>
-                    <input type="text" name="password" class="userInput" id="password">
+                    <div class="inputContainer">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" class="userInput" id="lastName">
+                    </div>
                 </form>
-                <form id="rightInputs">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" class="userInput" id="lastName">
+                <form id="middleInputs">
+                    <div class="inputContainer">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="userInput" id="email">
+                    </div>
 
-                    <label for="phoneNumber">Phone Number</label>
+                    <div class="inputContainer">
+                        <label for="phoneNumber">Phone Number</label>
                     <input type="text" name="phoneNumber" class="userInput" id="phoneNumber">
-
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="text" name="confirmPassword" class="userInput" id="confirmPassword">
+                    </div>
+                </form>
+                <form id="bottomInputs" action="" method="post">
+                    <div class="inputContainer">
+                        <label for="password">Password</label>
+                        <input type="text" name="password" class="userInput" id="password">
+                    </div>
+                    <div class="inputContainer">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="text" name="confirmPassword" class="userInput" id="confirmPassword">
+                    </div>                        
                 </form>
             </div>
         </div>
