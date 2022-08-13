@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Mono:wght@400;500&display=swap');
+
+:root {
+    --accent-color: #660019;
+    --bg1: #FFEBF0;
+    --bg2: #FFF;
+    --font: 'Red Hat Display';
+}
 
 * {
     /* border: 1px solid red; */
@@ -15,37 +22,34 @@ html,body {
 
 body {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font), sans-serif;
 }
 
 h1 {
     font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font), sans-serif;
     font-weight: 600;
 }
 
 p {
     font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font), sans-serif;
 }
 
 a {
-    color: goldenrod;
+    color: var(--accent-color);
     font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font), sans-serif;
+    font-weight: 600;
 }
 
 button {
     color: white;
-    background-color: goldenrod;
-    border-radius: 10px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 3px black;
-    font-family: 'Montserrat', sans-serif;
-}
-
-button:hover {
-    opacity: 80%;
+    font-family: var(--font), sans-serif;
 }
 
 label {
@@ -64,18 +68,22 @@ label {
 
 .userInput {
     width: 85%;
-    height: 50%;
     border-radius: 4px;
     border-width: 1px;
     border-color: lightgray;
     border-style: solid;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-family: var(--font), sans-serif;
     outline: 0;
 }
 
 .userInput:focus {
-    border-color: #daa520;
-    border-width: 3px;
+    border-color: var(--accent-color);
+    border-width: 4px;
+}
+
+.creditLink {
+    font-size: 0.8rem;
 }
 
 /* IDs */
@@ -86,25 +94,31 @@ label {
     align-items: center;
     width: 33.33vw;
     height: 100vh;
-    background-image: url(./ira-huz-2PzeuxfKIuw-unsplash.jpg);
+    background-image: url(./backgroundImage.jpg);
 }
 
 #logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: 15vh;
     margin-top: 37%;
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
-#logoSpan {
-    color: white;    
+#logo {
+    color: white;   
+    font-family: 'Red Hat Mono', sans-serif; 
+    font-size: 4rem;
+    text-decoration: underline;
 }
 
 #credit {
     position: absolute;
-    bottom: 0;
-}
+    top: 0;
+    left: 0;
+    font-size: 0.8rem;}
 
 #rightDiv {
     width: 66.66vw;
@@ -117,8 +131,8 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 33.33vh;
-    background-color: rgb(245, 245, 245);
+    height: 30vh;
+    background-color: var(--bg2);
 }
 
 #header1 {
@@ -134,9 +148,10 @@ label {
 }
 
 #midDiv {
-    height: 33.33vh;
-    box-shadow: 3px 10px 10px -8px #DAA520;
+    height: 40vh;
+    box-shadow: 3px 10px 10px -8px darkgray;
     z-index: 2;
+    background-color: var(--bg1);
 }
 
 #midText {
@@ -168,8 +183,8 @@ label {
     flex-direction: column;
     align-items: left;
     justify-content: top;
-    height: 33.33%;
-    background-color: rgb(245, 245, 245);
+    height: 30%;
+    background-color: var(--bg2);
 }
 
 #firstName,#lastName,#email,#phoneNumber,#password,#confirmPassword {
@@ -177,12 +192,18 @@ label {
 }
 
 #createAccount {
-    width: 32%;
-    height: 12%;
+    width: 27%;
+    height: 18%;
     font-size: 1.3rem;
     font-weight: 700;
     margin-left: 7.5%;
     margin-top: 5%;
+}
+
+#createAccount:hover {
+    background-color: white;
+    color: var(--accent-color);
+    border: 3px solid var(--accent-color);
 }
 
 #bottomText {
