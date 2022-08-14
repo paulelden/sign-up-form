@@ -160,7 +160,7 @@ label {
 
 #midText {
     padding-left: 8%;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 1%;
 }
 
@@ -186,7 +186,10 @@ label {
 }
 
 #passwordError {
-    
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: -3px;
 }
 
 #botDiv {
