@@ -53,14 +53,14 @@
                     <div id="bottomInputs">
                         <div class="inputContainer">
                             <label for="passwordBox">Password</label>
-                            <input type="password" name="passwordBox" class="userInput" id="passwordBox" autocomplete="new-password" required>
+                            <input type="password" name="passwordBox" class="userInput" id="passwordBox" autocomplete="new-password" minlength=8 required>
                         </div>
                         <div class="inputContainer">
                             <label for="confirmPasswordBox">Confirm Password</label>
-                            <input type="password" name="confirmPasswordBox" class="userInput" id="confirmPasswordBox" autocomplete="new-password" required>
+                            <input type="password" name="confirmPasswordBox" class="userInput" id="confirmPasswordBox" autocomplete="new-password" minlength=8 required>
                         </div>  
                     </div>
-                    <p id="passwordError">* Passwords do not match</p>  
+                    <p id="passwordError" hidden>* Passwords do not match</p>  
                 </form>
             </div>
         </div>
@@ -77,4 +77,4 @@
 
 
 <!-- TO DO:
-- passwords do not match  -->
+- password validation/requirements?  -->
