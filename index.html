@@ -19,50 +19,53 @@
     </div>
     <div id="rightDiv">
         <div id="topDiv">
-            <h1 id="header1">This is not a real online service! You know you need something like this in your life 
-                to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            <h1 id="header1">With CORPus, anything is possible. Our state-of-the-art cybernetic technology can help you transform your mind, body, and life. 
+                Don't worry about reading the fine print. Seriously. Nothing suspicious going on at all. Sign up now to get started!
             </h1>
             <h1 id="header2">You <em>know</em> you want to.</h1>
         </div>
         <div id="midDiv">
             <h1 id="midText">Let's do this!</h1>
             <div id="userInfoPane">
-                <form id="topInputs" action="" method="post">
-                    <div class="inputContainer">
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" class="userInput" id="firstName">
+                <form id="userInputs" action="" method="post">
+                    <div id="topInputs">
+                        <div class="inputContainer">
+                            <label for="firstNameBox">First Name</label>
+                            <input type="text" name="firstNameBox" class="userInput" id="firstNameBox" autocomplete="given-name" >
+                        </div>
+                        
+                        <div class="inputContainer">
+                            <label for="lastNameBox">Last Name</label>
+                            <input type="text" name="lastNameBox" class="userInput" id="lastNameBox" autocomplete="family-name">
+                        </div>
                     </div>
-                    
-                    <div class="inputContainer">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" class="userInput" id="lastName">
-                    </div>
-                </form>
-                <form id="middleInputs">
-                    <div class="inputContainer">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="userInput" id="email">
-                    </div>
+                    <div id="middleInputs">
+                        <div class="inputContainer">
+                            <label for="emailBox">Email</label>
+                            <input type="email" name="emailBox" class="userInput" id="emailBox" autocomplete="username">
+                        </div>
 
-                    <div class="inputContainer">
-                        <label for="phoneNumber">Phone Number</label>
-                    <input type="text" name="phoneNumber" class="userInput" id="phoneNumber">
+                        <div class="inputContainer">
+                            <label for="phoneNumberBox">Phone Number</label>
+                        <input type="tel" name="phoneNumberBox" class="userInput" id="phoneNumberBox" autocomplete="tel">
+                        </div>
                     </div>
-                </form>
-                <form id="bottomInputs" action="" method="post">
-                    <div class="inputContainer">
-                        <label for="password">Password</label>
-                        <input type="text" name="password" class="userInput" id="password">
-                    </div>
-                    <div class="inputContainer">
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="text" name="confirmPassword" class="userInput" id="confirmPassword">
-                    </div>                        
+                    <div id="bottomInputs">
+                        <div class="inputContainer">
+                            <label for="passwordBox">Password</label>
+                            <input type="password" name="passwordBox" class="userInput" id="passwordBox" autocomplete="new-password">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="confirmPasswordBox">Confirm Password</label>
+                            <input type="password" name="confirmPasswordBox" class="userInput" id="confirmPasswordBox" autocomplete="new-password">
+                        </div>  
+                        <p id="passwordError">* Passwords do not match</p>      
+                    </div>     
                 </form>
             </div>
         </div>
         <div id="botDiv">
-            <button id="createAccount">Create Account</button>
+            <button type="submit" form="userInputs" id="createAccount">Create Account</button>
             <p id="bottomText">Already have an account? <a href="">Log in</a></p> 
         </div>
     </div>
