@@ -9,6 +9,8 @@ const confirmPasswordBox = document.getElementById('confirmPasswordBox');
 const passwordError = document.getElementById('passwordError');
 const createAccount = document.getElementById('createAccount');
 
+
+
 // functions 
 
 
@@ -19,11 +21,13 @@ passwordBox.addEventListener('input', function() {
     if (passwordBox.value !== confirmPasswordBox.value){
         passwordBox.classList.add('error');
         confirmPasswordBox.classList.add('error');
+        createAccount.disabled = true;
         passwordError.hidden = false;
     }
     else {
         passwordBox.classList.remove('error');
         confirmPasswordBox.classList.remove('error');
+        createAccount.disabled = false;
         passwordError.hidden = true;
     }
 });
@@ -32,11 +36,13 @@ confirmPasswordBox.addEventListener('input', function() {
     if (passwordBox.value !== confirmPasswordBox.value){
         passwordBox.classList.add('error');
         confirmPasswordBox.classList.add('error');
+        createAccount.disabled = true;
         passwordError.hidden = false;
     }
     else {
         passwordBox.classList.remove('error');
         confirmPasswordBox.classList.remove('error');
+        createAccount.disabled = false;
         passwordError.hidden = true;
     }
 });

@@ -52,12 +52,12 @@
                     </div>
                     <div id="bottomInputs">
                         <div class="inputContainer">
-                            <label for="passwordBox">Password</label>
-                            <input type="password" name="passwordBox" class="userInput" id="passwordBox" autocomplete="new-password" minlength=8 required>
+                            <label for="passwordBox">Password</label>                                                             <!-- the below pattern is 8+ chars, and one of each digit/upper/lower -->
+                            <input type="password" name="passwordBox" class="userInput" id="passwordBox" autocomplete="new-password" minlength=8 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>
                         <div class="inputContainer">
                             <label for="confirmPasswordBox">Confirm Password</label>
-                            <input type="password" name="confirmPasswordBox" class="userInput" id="confirmPasswordBox" autocomplete="new-password" minlength=8 required>
+                            <input type="password" name="confirmPasswordBox" class="userInput" id="confirmPasswordBox" autocomplete="new-password" minlength=8 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>  
                     </div>
                     <p id="passwordError" hidden>* Passwords do not match</p>  
